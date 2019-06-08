@@ -7,12 +7,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { UserComponent } from './user/user.component';
 import { RepositoryComponent } from './repository/repository.component';
+import { CustomDirective } from './custom.directive';
+import { DateShowPipe } from './date-show.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     UserComponent,
-    RepositoryComponent
+    RepositoryComponent,
+    CustomDirective,
+    DateShowPipe
   ],
   imports: [
     BrowserModule,
