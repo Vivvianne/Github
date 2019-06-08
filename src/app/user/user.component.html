@@ -1,3 +1,94 @@
-<p>
-  user works!
-</p>
+<div class="container p-4">
+  <div class="row">
+    <div class="col-md-12 text-center">
+      <h1>Git Search</h1>
+    </div>
+  </div>
+  <form action="" style="border: 1px solid #ececec; padding:20px;">
+    <div class="row">
+      <div class="col-md-8">
+        <input type="text" name="username" [(ngModel)]="username" placeholder="Enter Username" class="form-control">
+      </div>
+      <div class="col-md-4 ">
+        <button (click)="searchGit()" class="btn  btn-primary" style="width:100%;">Search</button>
+      </div>
+    </div>
+  </form>
+  <div class="container py-3" *ngIf="searching">
+    <div class="row">
+      <div class="col text-center">
+        <div class="spinner-border" role="status">
+          <span class="sr-only">Loading...</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container" *ngIf="userdata" class="userdata">
+    <div class="row">
+      <div class="col-md-4">
+        <img src="{{userdata.avatar_url}}" class="img-reponsive" style="width: 100%">
+      </div>
+      <div class="col-md-8 py-2">
+        <div class="row">
+          <div class="col-md-5">
+            <h5>Username:</h5>
+          </div>
+          <div class="col-md-7">
+            {{userdata.login}}
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-5">
+            <h5>Number of Public Repos:</h5>
+          </div>
+          <div class="col-md-7">
+            {{userdata.public_repos}}
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-5">
+            <h5>Followers:</h5>
+
+          </div>
+          <div class="col-md-7">
+            {{userdata.followers}}
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-5">
+            <h5>Following:</h5>
+
+          </div>
+          <div class="col-md-7">
+            {{userdata.following}}
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-5">
+            <h5>Date Created:</h5>
+
+          </div>
+          <div class="col-md-7">
+            {{userdata.created_at}}
+          </div>
+        </div>
+      </div>
+      <div class="container py-3">
+        <h4>Public Repositories</h4>
+        <div class="row">
+          <div *ngFor="let r of repos" class="col-md-3 text-center my-2">
+            <a [routerLink]="['repos/',r.full_name]">
+              <div class="card">
+                {{r.name}}
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+  </div>
+
+</div>
