@@ -1,6 +1,10 @@
-.container p-4 {
-background-image: url(../images/github-image-796x418.png);
+form {
+border: 1px solid #2c2424; 
+padding:20px;
 }
-.col-md-12 text-center {
-    background-image: url(../images/9919.png);
+.col-md-12 {
+    width: 20px;
+}
+button {
+    border-radius: 10px;
 }
