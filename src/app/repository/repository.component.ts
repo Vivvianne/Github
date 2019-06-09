@@ -10,7 +10,7 @@ import { MainService } from '../main.service';
 })
 export class RepositoryComponent implements OnInit {
 
-  constructor(private location:Location,  private router:Router,private route:ActivatedRoute, private mainservice:MainService) { }
+  constructor( private location:Location, private router:Router, private route:ActivatedRoute, private mainservice:MainService) { }
 
   reponame: string;
   repoDetails:any;
@@ -19,11 +19,11 @@ export class RepositoryComponent implements OnInit {
   ngOnInit() {
     this.route.paramMap.subscribe((params: ParamMap) => {
       this.reponame = params.get('name');
-      console.log(this.reponame)
+      //console.log(this.reponame)
     })
     this.mainservice.getRepo(this.reponame).subscribe(res =>{
       this.repoDetails = res;
-      alert(res)
+      //console.log(res)
     })
   }
   
