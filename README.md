@@ -1,12 +1,18 @@
-# Github
+# Github Search
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.9.
+Author: Vivvianne Kimani.
 
-## Development server
+This is the second independent project for Moringa core. This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.9.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Discription
 
-## Code scaffolding
+Github Search is a web application that uses the GitHub API to perform searches on GitHub and display the results to the user.
+
+## Features
+Uses the Github API to perform searches on Github, and display the results to the users.
+Users page searches for user profile strictly using the user name.
+User chooses the repository to view from the displayed repositories.
+
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 

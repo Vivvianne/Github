@@ -15,20 +15,30 @@ export class UserComponent implements OnInit {
   userdata:any;
   repos:any;
   searching:boolean =false;
+  notfound:boolean = false;
   userdate:any;
 
 
   ngOnInit() {
   }
   searchGit(){
+    this.notfound =false;
     this.searching = true;
     this.mainservice.getProfile(this.username).subscribe(res=>{
    this.userdata = res
    this.userdate = this.datepipe.transform(this.userdata.created_at)
     this.mainservice.getRepos(this.userdata.repos_url).subscribe(res=>{
       this.repos = res
+    },err=>{
+      this.notfound = true;
+      console.log(err.error.message);
+      this.searching =false;
     });
     this.searching =false;
+    },err=>{
+      this.notfound = true;
+      console.log(err.error.message);
+      this.searching =false;
     })
 
   }
