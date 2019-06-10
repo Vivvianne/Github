@@ -9,13 +9,13 @@ import { DateShowPipe } from '../date-show.pipe';
   styleUrls: ['./user.component.css']
 })
 export class UserComponent implements OnInit {
+  notfound: boolean;
 
   constructor(private mainservice: MainService, private datepipe:DateShowPipe) { }
   username:string;
   userdata:any;
   repos:any;
   searching:boolean =false;
-  notfound:boolean = false;
   userdate:any;
 
 
