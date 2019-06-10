@@ -9,12 +9,35 @@ This is the second independent project for Moringa core. This project was genera
 Github Search is a web application that uses the GitHub API to perform searches on GitHub and display the results to the user.
 
 ## Features
+
 Uses the Github API to perform searches on Github, and display the results to the users.
 Users page searches for user profile strictly using the user name.
 User chooses the repository to view from the displayed repositories.
+ ## Behavior Driven Development
 
+ 1. Show github -search User interface.
+ 2. Enter a name of a supposedly a git user.
+ 3. If a name is a github user, the UI will show the github user profile and the user repositories.
+ 4. Click on a repository, and the user will see details of the chosen repository.
+ 5. Click on the back button and the user go's back to the default page.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+ ## Known Bugs
+
+ No known bugs
+
+ ## Live Site
+ One can view the live site here
+
+ ## Technologies Used
+ It is built using Angular JS, HTML, Bootstrap. The website uses components, custom directives, custom pipes, routing modules.
+
+ ## Licence
+
+ MIT Licence
+
+ ## Contact Information
+ One can reach me at ndiahav@gmail.com
+
 
 ## Build
 
