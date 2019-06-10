@@ -26,7 +26,7 @@ User chooses the repository to view from the displayed repositories.
  No known bugs
 
  ## Live Site
- One can view the live site here
+ One can view the live site here https://github-search-viv.netlify.com/
 
  ## Technologies Used
  It is built using Angular JS, HTML, Bootstrap. The website uses components, custom directives, custom pipes, routing modules.
@@ -34,6 +34,7 @@ User chooses the repository to view from the displayed repositories.
  ## Licence
 
  MIT Licence
+ you can view the licence here https://github.com/Vivvianne/Github/blob/gh-pages/LICENSE
 
  ## Contact Information
  One can reach me at ndiahav@gmail.com
