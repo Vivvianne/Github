@@ -24,6 +24,13 @@
       </div>
     </div>
   </div>
+  <div class="container py-3" *ngIf="notfound">
+      <div class="row">
+        <div class="col text-center">
+          <h4>NOT FOUND</h4>
+        </div>
+      </div>
+    </div>
   <div class="container" *ngIf="userdata" class="userdata">
     <div class="row">
       <div class="col-md-4">
