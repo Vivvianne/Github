@@ -29,6 +29,7 @@ export class UserComponent implements OnInit {
    this.userdate = this.datepipe.transform(this.userdata.created_at)
     this.mainservice.getRepos(this.userdata.repos_url).subscribe(res=>{
       this.repos = res
+      console.log(res)
     },err=>{
       this.notfound = true;
       console.log(err.error.message);

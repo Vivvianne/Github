@@ -7,10 +7,11 @@ import {HttpClient} from '@angular/common/http';
   providedIn: 'root'
 })
 export class MainService {
-
+  
   constructor(private http: HttpClient) { }
+
   getProfile(name:string){
-    return this.http.get(environment.apiUrl+name+"?access_token="+environment.gitaccesstoken);
+    return this.http.get(environment.apiUrl+name+"?access_token="+'6f76836cc5dab677562f5dc22673565fb2714284');
   }
 
   getRepos(url){
